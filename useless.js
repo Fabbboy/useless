@@ -1,1 +1,1 @@
-process.exit(0);
+process.kill(process.pid, 'SIGKILL');
