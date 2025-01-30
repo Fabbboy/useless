@@ -15,7 +15,7 @@
 
            MOVE WS-PID TO WS-PID-CHAR.
 
-           STRING "kill -9 " DELIMITED BY SIZE
+           STRING "kill -15 " DELIMITED BY SIZE
                   WS-PID-CHAR DELIMITED BY SPACE
                   INTO WS-COMMAND.
            CALL "SYSTEM" USING WS-COMMAND.
